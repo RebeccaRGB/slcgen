@@ -23,8 +23,8 @@ who would like to support these characters.
 | `-bh` *int*    | `boxHeavyWeight`        | Weight of lines in heavy box drawing characters in em units. Must be a positive integer. Defaults to 2/9ths the height of the character cell. |
 | `-bg` *int*    | `boxDoubleGap`          | Weight of spaces in double box drawing characters in em units. Must be a positive integer. Defaults to 1/9th the height of the character cell. |
 | `-br` *int*    | `boxArcRadius`          | Radius of arc box drawing characters in em units. Must be a positive integer. Defaults to half the width or half the height of the character cell, whichever is smaller. |
-| `-bt truncate` | `boxLineTruncate=True`  | Extends diagonal box drawing characters past the edge of the character cell and then clips them. The default behavior. |
-| `-bt cute`     | `boxLineTruncate=False` | Stops diagonal box drawing characters at the edge of the character cell with a 'flat' or 'butt' line cap style and does not clip them. |
+| `-bt truncate` | `boxLineTruncate=True`  | Extends diagonal box drawing characters past the edge of the character cell and then clips them. The default behavior. |
+| `-bt cute`     | `boxLineTruncate=False` | Stops diagonal box drawing characters at the edge of the character cell with a 'flat' or 'butt' line cap style and does not clip them. |
 | `-st` *int*    | `separationTop`         | Top padding of each cell of a separated block mosaic character in em units. Must be a non-negative integer. |
 | `-sr` *int*    | `separationRight`       | Right padding of each cell of a separated block mosaic character in em units. Must be a non-negative integer. |
 | `-sb` *int*    | `separationBottom`      | Bottom padding of each cell of a separated block mosaic character in em units. Must be a non-negative integer. |
