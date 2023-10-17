@@ -126,9 +126,14 @@ class GlyphProxy:
 
 	def rawpoly(self, *points):
 		pen = self.glyph.glyphPen(replace=False)
-		pen.moveTo((round(points[0][0]), round(points[0][1])))
+		coords = (round(points[0][0]), round(points[0][1]))
+		pen.moveTo(coords[0], coords[1])
 		for p in points[1:]:
-			pen.lineTo((round(p[0]), round(p[1])))
+			coords_new = (round(p[0]), round(p[1]))
+			if coords_new == coords:
+				continue
+			coords = coords_new
+			pen.lineTo(coords)
 		pen.closePath()
 		self.glyph.simplify()
 		return self
